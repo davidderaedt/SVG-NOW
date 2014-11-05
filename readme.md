@@ -1,6 +1,6 @@
 #SVG NOW for Adobe Illustrator
 
-![image](screenshot.png)
+![image](screencap.png)
 
 SVG NOW is an alternative SVG exporter for [Adobe Illustrator](http://www.adobe.com/products/illustrator.html). It is aimed at optimizing SVG files by postprocessing the generated code using [SVGO](https://github.com/svg/svgo).
 
