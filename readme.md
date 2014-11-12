@@ -1,13 +1,14 @@
 #SVG NOW for Adobe Illustrator
 
 ![image](pics/SVGNOW.png)
-![image](pics/screencap.png)
 
 SVG NOW is an alternative SVG exporter for [Adobe Illustrator](http://www.adobe.com/products/illustrator.html). It is aimed at optimizing SVG files by postprocessing the generated code using [SVGO](https://github.com/svg/svgo).
 
 SVG NOW is an in-app panel, currently in private beta, and will be distributed as a [Creative Cloud Add-on](https://creative.adobe.com/addons).
 
 It is free, open source (distributed with an MIT license) and will always be. 
+
+![image](pics/screencap.png)
 
 	Artworks in the the examples folder remain the property of their respective authors and shall not be redistributed without their permission.
 
