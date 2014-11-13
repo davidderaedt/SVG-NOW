@@ -12,7 +12,7 @@ It is free, open source (under MIT license) and will always be.
 
 
 ###What for?
-A much smaller & cleaner SVG code without altering the underlying artwork. Using default parameters, file size typically decreases by 30% - 50% depending on the nature of the artwork. Note that there is no file compression, only code optimisation.
+A much smaller & cleaner SVG code without modifying the underlying artwork. Using default parameters, file size typically decreases by 30% - 50% depending on the nature of the artwork. Note that there is no file compression, only code optimisation.
 
 ![image](pics/jeanne-compared.png)
 
@@ -22,7 +22,8 @@ Please note that you can definitely optimize such an artwork even further by usi
 
 Also, keep in mind that fonts are outlined by default. If your artwork contains a lot of text and can deal with the obvious consequences, you should turn off this option.
 
-###What optimizations are performed, precisely?
+###What optimizations are performed? Can this damage my artwork?
+
 A lot. Please refer to the [SVGO](https://github.com/svg/svgo) project page for more info.
 
 If everything goes well, your artwork should not be visually modified. There are however exceptions, and you should always double check and try different option combos if necessary.
