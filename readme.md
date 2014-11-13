@@ -2,35 +2,31 @@
 
 ![image](pics/SVGNOW.png)
 
-SVG NOW is an alternative SVG exporter for [Adobe Illustrator](http://www.adobe.com/products/illustrator.html). It is aimed at optimizing SVG files by postprocessing the generated code using [SVGO](https://github.com/svg/svgo).
+SVG NOW is an alternative SVG exporter for [Adobe Illustrator](http://www.adobe.com/products/illustrator.html) currently under development. It is aimed at optimizing SVG files by post-processing the generated SVG code using [SVGO](https://github.com/svg/svgo).
 
-SVG NOW is an in-app panel, currently in private beta, and will be distributed as a [Creative Cloud Add-on](https://creative.adobe.com/addons).
-
-It is free, open source (distributed with an MIT license) and will always be. 
+It is free, open source (under MIT license) and will always be.
 
 ![image](pics/screencap.png)
 
 	Artworks in the the examples folder remain the property of their respective authors and shall not be redistributed without their permission.
 
 
-
-##FAQ
-
 ###What for?
-A much smaller & cleaner SVG code. Using default parameters, file size typically decreases by 30% - 50% depending on the nature of the artwork. Note that there is no file compression, only code optimisation.
+A much smaller & cleaner SVG code without altering the underlying artwork. Using default parameters, file size typically decreases by 30% - 50% depending on the nature of the artwork. Note that there is no file compression, only code optimisation.
+
+![image](pics/jeanne-compared.png)
+
+Please note that you can definitely optimize such an artwork even further by using Illustrator's path simplication tool (*Object > Path > Simplify*) and enter a value comprised between 90% and 100%. Results can be pretty amazing. As you can see with the following example, combining both path simplification and SVGO/SVG Now optimization, you can save up to 80% (before compression) in a matter of seconds with little to no visual difference from the original artwork. Once compressed (which your webserver will probably do for you), the SVG file comes down to an impressive 73 Kb.
+
+![image](pics/jeanne-compared-simplified.png)
+
+Also, keep in mind that fonts are outlined by default. If your artwork contains a lot of text and can deal with the obvious consequences, you should turn off this option.
 
 ###What optimizations are performed, precisely?
-See the [SVGO](https://github.com/svg/svgo) project page for more info.
+A lot. Please refer to the [SVGO](https://github.com/svg/svgo) project page for more info.
 
-###How will this affect my artwork?
 If everything goes well, your artwork should not be visually modified. There are however exceptions, and you should always double check and try different option combos if necessary.
 
-###Can I optimize my file size even further?
-YES! Three things:
-
-* The first thing you should do is use Illustrator's path simplication tool (Object > Path > Simplify) and enter a value comprised between 90% and 99%. Results can be pretty amazing. 
-* If your artwork contains a lot of text and can deal with the obvious consequences, you should turn off the "outline text" option.
-* You can also compress the SVG after optimization, but keep in mind that most web server do that for you anyway... 
 
 ###How is that different from Illustrator's own SVG exporter?
 It is built on top of Illustrator's SVG exporter, controls some of its parameters and default values, and runs a customized version of SVGO (node module) with an HTML GUI built on top of it to control its plugins.
