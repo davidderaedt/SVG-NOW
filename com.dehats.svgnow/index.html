@@ -11,14 +11,28 @@
 
 <body class="hostElt">
 
-    <div id="content">        
-
-        
+    <div id="content">
+                
         <div>                
             <button id="btn_test" class="topcoat-button--large--cta hostFontSize">Export Optimized SVG</button>                
         </div>   
-       <br><br>
-
+       <br>
+        
+        <p class="advice">Remember to first use Object > Path > Simplify at 90%-100%.</p> 
+        
+<!--
+        <p class="advice">Also, if using blend modes, choose Object > Flatten transparency to convert them to static shapes and colors.</p>    
+        
+-->
+        <label class="sectionLabel">Illustrator options</label><br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="keepOriginalCb" type="checkbox" checked disabled>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Keep original file
+        </label> 
+        <br><br>
+        
         <label class="topcoat-checkbox">
           <input id="outlineFontsCb" type="checkbox" checked>
           <div class="topcoat-checkbox__checkmark"></div>
@@ -26,29 +40,243 @@
         </label> 
         <br><br>
 
+        <!-- SVGO Config -->
+        
+        <label class="sectionLabel">Optimisation (SVGO config)</label><br><br>
+                
+        <label class="topcoat-checkbox">
+          <input id="cleanupAttrsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Cleanup attributes from newlines and spaces
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeDoctypeCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove Doctype
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeXMLProcInstCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove XML proc. instructions
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeCommentsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove comments
+        </label> 
+        <br><br>
+        
+        
+        <label class="topcoat-checkbox">
+          <input id="removeMetadataCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove metadata
+        </label> 
+        <br><br>
+                
+        <label class="topcoat-checkbox">
+          <input id="removeTitleCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove Title
+        </label> 
+        <br><br>
+                  
+        <label class="topcoat-checkbox">
+          <input id="removeDescCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove desc
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeEditorsNSDataCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove editor's data
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeEmptyAttrsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove empty attributes
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeHiddenElemsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove hidden elements
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeEmptyTextCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove empty texts
+        </label> 
+        <br><br>
+                
+        <label class="topcoat-checkbox">
+          <input id="removeEmptyContainersCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove empty containers
+        </label> 
+        <br><br>
+                
+        <label class="topcoat-checkbox">
+          <input id="removeViewBoxCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove viewbox
+        </label> 
+        <br><br>
+        
+                
+        <label class="topcoat-checkbox">
+          <input id="cleanupEnableBackgroundCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove or cleanup enable-background
+        </label> 
+        <br><br>
+               
+        <label class="topcoat-checkbox">
+          <input id="cleanupEnableBackgroundCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Cleanup enablebackground
+        </label> 
+        <br><br>
+        
         <label class="topcoat-checkbox">
           <input id="convertStylesToAttrsCb" type="checkbox" checked>
           <div class="topcoat-checkbox__checkmark"></div>
           Convert styles to attributes
         </label> 
         <br><br>
-
+       
+        <label class="topcoat-checkbox">
+          <input id="convertColorsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Convert colors to rrggbb or rgb
+        </label> 
+        <br><br>
 
         <label class="topcoat-checkbox">
           <input id="convertPathDataCb" type="checkbox" checked>
           <div class="topcoat-checkbox__checkmark"></div>
-          Convert path data
+          Convert path data, convert segments and more
         </label> 
         <br><br>
 
+        <label class="topcoat-checkbox">
+          <input id="convertTransformCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Collapse transforms, convert matrices and more
+        </label> 
+        <br><br>
 
         <label class="topcoat-checkbox">
-          <input id="keepOriginalCb" type="checkbox" checked disabled>
+          <input id="removeUnknownsAndDefaultsCb" type="checkbox" checked>
           <div class="topcoat-checkbox__checkmark"></div>
-          Keep original file
+          Remove unknown elements, attributes and defaults
         </label> 
- 
+        <br><br>
 
+        <label class="topcoat-checkbox">
+          <input id="removeNonInheritableGroupAttrsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove non-inheritable group attributes
+        </label> 
+        <br><br>
+        
+        <label class="topcoat-checkbox">
+          <input id="removeUselessStrokeAndFillCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove useless strokes and fills
+        </label> 
+        <br><br>    
+        
+       <label class="topcoat-checkbox">
+          <input id="removeUnusedNSCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove unused namespaces
+        </label> 
+        <br><br>    
+                
+       <label class="topcoat-checkbox">
+          <input id="cleanupIDsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Cleanup IDs
+        </label> 
+        <br><br>    
+                        
+       <label class="topcoat-checkbox">
+          <input id="cleanupNumericValuesCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Cleanup numeric values
+        </label> 
+        <br><br>    
+                        
+       <label class="topcoat-checkbox">
+          <input id="moveElemsAttrsToGroupCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Move elements attributes to groups
+        </label> 
+        <br><br>    
+                                
+       <label class="topcoat-checkbox">
+          <input id="moveGroupAttrsToElemsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Move some group attributes to elements
+        </label> 
+        <br><br>    
+                          
+       <label class="topcoat-checkbox">
+          <input id="collapseGroupsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Collapse useless groups
+        </label> 
+        <br><br>    
+                                 
+       <label class="topcoat-checkbox">
+          <input id="removeRasterImagesCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Remove raster images
+        </label> 
+        <br><br>
+                                
+       <label class="topcoat-checkbox">
+          <input id="mergePathsCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Merge paths
+        </label> 
+        <br><br>    
+        
+                                
+       <label class="topcoat-checkbox">
+          <input id="convertShapeToPathCb" type="checkbox" checked>
+          <div class="topcoat-checkbox__checkmark"></div>
+          Convert paths to shapes
+        </label> 
+        <br><br>    
+                                
+       <label class="topcoat-checkbox">
+          <input id="sortAttrsCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Sort attributes for readibility
+        </label> 
+        <br><br>    
+                               
+       <label class="topcoat-checkbox">
+          <input id="transformsWithOnePathCb" type="checkbox" >
+          <div class="topcoat-checkbox__checkmark"></div>
+          Tranform, crop, v center, resize with 1 path
+        </label> 
+        <br><br>    
         
     </div>
     

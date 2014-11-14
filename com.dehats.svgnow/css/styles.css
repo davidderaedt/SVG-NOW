@@ -18,7 +18,13 @@
 }
 
 
+.sectionLabel{
+    font-weight: bold;   
+}
 
+.advice{
+    font-style: italic;
+}
 
 /*
 Those classes will be edited at runtime with values specified

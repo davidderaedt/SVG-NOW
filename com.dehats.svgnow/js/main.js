@@ -33,10 +33,39 @@
                 var filepath = destFolderPath + "/" + docName + ".svg";   
                 var destFilePath =  destFolderPath + "/" + docName + "-opt.svg";  
 
-
                 var pluginConfig = [                
-                    {convertPathData: $('#convertPathDataCb').is(':checked')},
-                    {convertStyleToAttrs: false},
+                    {cleanupAttrs: $('#cleanupAttrsCb').is(':checked')},
+                    {removeDoctype : $('#removeDoctypeCb').is(':checked')},
+                    {removeXMLProcInst : $('#removeXMLProcInstCb').is(':checked')},
+                    {removeComments : $('#removeCommentsCb').is(':checked')},
+                    {removeMetadata : $('#removeMetadataCb').is(':checked')},
+                    {removeTitle : $('#removeTitleCb').is(':checked')},
+                    {removeDesc : $('#removeDescCb').is(':checked')},
+                    {removeEditorsNSData : $('#removeEditorsNSDataCb').is(':checked')},
+                    {removeEmptyAttrs : $('#removeEmptyAttrsCb').is(':checked')},
+                    {removeHiddenElems : $('#removeHiddenElemsCb').is(':checked')},
+                    {removeEmptyText : $('#removeEmptyTextCb').is(':checked')},
+                    {removeEmptyContainers : $('#removeEmptyContainersCb').is(':checked')},
+                    {removeViewBox : $('#removeViewBoxCb').is(':checked')},
+                    {cleanupEnableBackground : $('#cleanupEnableBackgroundCb').is(':checked')},
+                    {convertStyleToAttrs: $('#convertStyleToAttrsCb').is(':checked')},
+                    {convertColors : $('#convertColorsCb').is(':checked')},
+                    {convertPathData: $('#convertPathDataCb').is(':checked')},                    
+                    {convertTransform : $('#convertTransformCb').is(':checked')},                    
+                    {removeUnknownsAndDefaults : $('#removeUnknownsAndDefaultsCb').is(':checked')},                    
+                    {removeNonInheritableGroupAttrs : $('#removeNonInheritableGroupAttrsCb').is(':checked')},                    
+                    {removeUselessStrokeAndFill : $('#removeUselessStrokeAndFillCb').is(':checked')},                    
+                    {removeUnusedNS : $('#removeUnusedNSCb').is(':checked')},                    
+                    {cleanupIDs : $('#cleanupIDsCb').is(':checked')},                    
+                    {cleanupNumericValues : $('#cleanupNumericValuesCb').is(':checked')},                    
+                    {moveElemsAttrsToGroup : $('#moveElemsAttrsToGroupCb').is(':checked')},                    
+                    {moveGroupAttrsToElems : $('#moveGroupAttrsToElemsCb').is(':checked')},                    
+                    {collapseGroups : $('#collapseGroupsCb').is(':checked')},                    
+                    {removeRasterImages : $('#removeRasterImagesCb').is(':checked')},                    
+                    {mergePaths : $('#mergePathsCb').is(':checked')},                    
+                    {convertShapeToPath : $('#convertShapeToPathCb').is(':checked')},                    
+                    {sortAttrs : $('#sortAttrsCb').is(':checked')},                    
+                    {transformsWithOnePath : $('#transformsWithOnePathCb').is(':checked')},                    
                 ];
 
 
