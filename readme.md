@@ -11,6 +11,20 @@ Creative Cloud members can install a beta version of this panel from the [creati
 	Artworks in the the examples folder remain the property of their respective authors and shall not be redistributed without their permission.
 
 
+##Release notes
+
+#### v0.2 / beta 2 (Nov 18th 2014)
+
+By popular demand, all SVGO plugins can now be enabled or disabled via checkboxes in the panel. Default values match the default values of the SVGO project.
+
+
+#### v0.1 / beta 1 (Nov 10th 2014)
+
+First beta release.
+
+
+##FAQ
+
 ###Why?
 A much smaller & cleaner SVG code without modifying the underlying artwork. Using default parameters, file size typically decreases by 30% - 50% depending on the nature of the artwork. Note that there is no file compression, only code optimisation.
 

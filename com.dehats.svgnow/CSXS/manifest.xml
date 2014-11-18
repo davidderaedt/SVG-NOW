@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="5.0" ExtensionBundleId="com.dehats.svgnow" ExtensionBundleVersion="0.1"
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.dehats.svgnow" ExtensionBundleVersion="0.2"
 		ExtensionBundleName="SVG Now BETA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.dehats.svgnow" Version="0.1" />
+		<Extension Id="com.dehats.svgnow" Version="0.2" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
