@@ -13,7 +13,7 @@
             <Host Name="PHSP" Version="[15.0,15.9]" />-->
 
             <!-- Illustrator -->
-            <Host Name="ILST" Version="[18.0,18.9]" />
+            <Host Name="ILST" Version="[19.0,19.9]" />
             <!-- InDesign -->
             <!-- <Host Name="IDSN" Version="[10.0,10.9]" /> -->          
             <!-- Premiere -->
