@@ -8,7 +8,7 @@ Creative Cloud members can install a beta version of this panel from the [creati
 
 ![image](pics/screencap.png)
 
-	Artworks in the the examples folder remain the property of their respective authors and shall not be redistributed without their permission.
+	Artworks in the examples folder remain the property of their respective authors and shall not be redistributed without their permission.
 
 
 ## Release notes
@@ -30,7 +30,7 @@ A much smaller & cleaner SVG code without modifying the underlying artwork. Usin
 
 ![image](pics/jeanne-compared.png)
 
-Please note that you can definitely optimize such an artwork even further by using Illustrator's path simplication tool (*Object > Path > Simplify*) and enter a value comprised between 90% and 100%. Results can be pretty amazing. As you can see with the following example, combining both path simplification and SVGO/SVG Now optimization, you can save up to 80% (before compression) in a matter of seconds with little to no visual difference from the original artwork. Once compressed (which your webserver will probably do for you), the SVG file comes down to an impressive 73 Kb.
+Please note that you can definitely optimize such an artwork even further by using Illustrator's path simplification tool (*Object > Path > Simplify*) and enter a value comprised between 90% and 100%. Results can be pretty amazing. As you can see with the following example, combining both path simplification and SVGO/SVG Now optimization, you can save up to 80% (before compression) in a matter of seconds with little to no visual difference from the original artwork. Once compressed (which your webserver will probably do for you), the SVG file comes down to an impressive 73 Kb.
 
 ![image](pics/jeanne-compared-simplified.png)
 
